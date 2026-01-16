@@ -6,6 +6,4 @@ T = int(input())
 for i in range(T):
     R, S = input().split()
     R = int(R)
-    for j in S:
-        print(j * R, end = '')
-    print('')
+    print(''.join([j * R for j in S]))
