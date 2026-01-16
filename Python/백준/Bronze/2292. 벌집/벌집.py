@@ -1,14 +1,10 @@
-import sys
-input = sys.stdin.readline
-
 N = int(input())
 
-cnt = 1
-mul = 1
+layer = 1
+num = 1
 
-while N > 1:
-    N -= 6 * mul
-    cnt += 1
-    mul += 1
+while num < N:
+    num += 6 * layer
+    layer += 1
 
-print(cnt)
+print(layer)
